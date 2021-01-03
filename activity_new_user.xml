@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewUserActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-up"
+        android:fontFamily="@font/averia_libre"
+        android:paddingBottom="10.5dp"
+        android:paddingTop="10.5dp"
+        android:paddingLeft="42dp"
+        android:textSize="20dp"
+        android:id="@+id/s"
+        android:textColor="@color/white"
+        android:background="@color/google_blue"></TextView>
+
+    <ImageButton
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:background="@color/google_blue"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/b_a"
+        android:src="@drawable/back_arrow"></ImageButton>
+
+    <ImageButton
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:background="@color/google_blue"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="370dp"
+        android:src="@drawable/menu"
+        android:id="@+id/m"></ImageButton>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/averia_libre_bold"
+        android:text="GPSKey"
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/averia_libre"
+        android:text="Create your account"
+        android:textSize="25dp"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:hint="First Name"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/averia_libre"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            android:background="@drawable/border"></EditText>
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/averia_libre"
+            android:background="@drawable/border"
+            android:hint="Last Name"></EditText>
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create"
+        android:layout_marginTop="93dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/averia_libre"
+        android:background="@drawable/border"
+        android:id="@+id/uname"
+        android:hint="User-name"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can use alphabets,numbers &amp; periods"
+        android:layout_below="@+id/uname"
+        android:textSize="10dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/condition"
+        ></TextView>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="318dp"
+            android:hint="Password"
+            android:layout_centerHorizontal="true"
+            android:inputType="textPassword"
+            android:layout_marginLeft="25dp"
+            android:fontFamily="@font/averia_libre"
+            android:background="@drawable/border"></EditText>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginTop="100dp"
+        android:id="@+id/login"
+        android:textColor="@color/white"
+        android:fontFamily="@font/averia_libre"
+        android:layout_below="@+id/condition"
+        android:background="@drawable/round_button"
+        android:layout_centerHorizontal="true"></Button>
+
+</RelativeLayout>
